@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=40.8.0", "wheel"]
-requires-python = "==3.11"
+# requires-python = "==3.11"
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,10 +11,10 @@ readme = "README.md"
 authors = [{name = "Chameleon Team"}]
 license = {file = "LICENSE"}
 dependencies = [
-    "transformers==4.36.2",
-    "xformers==0.0.23",
-    "Pillow==10.0.*",
-    "numpy==1.26.*",
+    # "transformers==4.36.2",
+    # "xformers==0.0.23",
+    # "Pillow==10.0.*",
+    # "numpy==1.26.*",
     "click",
     "flask",
     "flask_socketio",
@@ -27,7 +27,7 @@ chameleon = ["miniviewer/*.html"]
 include = ["chameleon*"]
 
 [tool.mypy]
-python_version = 3.11
+# python_version = 3.11
 disallow_untyped_calls = true
 disallow_any_explicit = true
 disallow_any_generics = true
